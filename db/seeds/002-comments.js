@@ -6,9 +6,9 @@ exports.seed = async function (knex) {
   // Deletes ALL existing entries
   await knex("comment_table").del();
   await knex("comment_table").insert([
-    { user_id: 7, details: "Great movie!", rate_movie: 5 },
-    { user_id: 7, details: "Could have been better.", rate_movie: 3 },
-    { user_id: 8, details: "Nice plot twist.", rate_movie: 4 },
+    { user_id: 11, details: "Great movie!", rate_movie: 5 },
+    { user_id: 12, details: "Could have been better.", rate_movie: 3 },
+    { user_id: 13, details: "Nice plot twist.", rate_movie: 4 },
     { user_id: 9, details: "Absolutely loved it!", rate_movie: 5 },
     {
       user_id: 10,
@@ -37,9 +37,9 @@ exports.seed = async function (knex) {
       rate_movie: 5,
     },
     { user_id: 14, details: "Ending felt rushed.", rate_movie: 3 },
-    { user_id: 7, details: "Laughed more than I expected.", rate_movie: 4 },
+    { user_id: 15, details: "Laughed more than I expected.", rate_movie: 4 },
     {
-      user_id: 8,
+      user_id: 15,
       details: "A must-watch for fans of the genre.",
       rate_movie: 5,
     },
