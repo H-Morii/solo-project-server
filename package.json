@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "migrate": "npx knex migrate:latest --knexfile knexfile.js",
-    "seed":"npx knex seed:run --knexfile knexfile.js --specific=001-users.js --specific=002-comments.js"
-    ,
+    "seed":"npx knex seed:run --knexfile knexfile.js --specific=001-users.js --specific=002-comments.js",
     "deploy": "npm install && npm run migrate && npm run seed",
     "start": "node ./src/index.js",
     "dev": "nodemon ./src/index.js",
